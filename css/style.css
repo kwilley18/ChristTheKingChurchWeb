@@ -93,11 +93,60 @@ p2{
   padding-top: 20px;
   height: 500px; 
   margin-right: 50px; 
- font-family: 'Didact Gothic', cursive; 
-	font-size: 15px; 
+  font-family: 'Didact Gothic', cursive; 
+  font-size: 15px; 
 
 
 }
+#popup{
+	display:none;
+	position: absolute; 
+	margin: 0 auto; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   /* box-shadow: 0px 0px 50px 2px #000;*/ 
+	transition-delay: 4s;
+	position: fixed; 
+}
+#close{
+	position: absolute; 
+	margin: 0 auto; 
+	color: white;
+	background-color: transparent;
+    font-family: 'Didact Gothic', cursive; 
+	border: transparent;
+
+}
+#close:hover{
+	color: mediumpurple;
+}
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap; 
@@ -284,6 +333,12 @@ li{
 .elements{
 	background-color: white; 
 	margin: auto; 
+}
+#liveButton{
+	border-radius: 4px; 
+	padding-bottom: 0px;
+	display: inline-block;
+	box-shadow: none;
 }
 #donateButton{
 	background-color: orchid; 
